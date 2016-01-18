@@ -79,7 +79,7 @@ Template.ListData.helpers({
       });
       let workInstanceString = `<br>*Work Instances:* ${workInstances}`;
       let student = `<br>*Student:* ${RadGrad.user.findOne(degreePlan.studentID).lastName}`;
-      
+
       return {description: courseInstanceString + opportunityInstanceString + workInstanceString + student}
     })
   },
@@ -175,4 +175,3 @@ Template.ListData.helpers({
 
 
 });
-
